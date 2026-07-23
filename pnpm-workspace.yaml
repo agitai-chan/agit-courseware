@@ -1,0 +1,13 @@
+packages:
+  - 'packages/*'
+  - 'apps/*'
+allowBuilds:
+  esbuild: true   # tsx(테스트 러너)가 쓰는 네이티브 빌드 — pnpm 11 승인
+minimumReleaseAgeExclude:
+  - '@supabase/auth-js@2.110.8'
+  - '@supabase/functions-js@2.110.8'
+  - '@supabase/postgrest-js@2.110.8'
+  - '@supabase/realtime-js@2.110.8'
+  - '@supabase/storage-js@2.110.8'
+  - '@supabase/supabase-js@2.110.8'
+

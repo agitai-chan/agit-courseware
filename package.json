@@ -1,0 +1,13 @@
+{
+  "name": "agit-courseware",
+  "private": true,
+  "packageManager": "pnpm@11.15.1",
+  "scripts": {
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "gate": "python3 gate_check.py ."
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,16 @@
+# 비밀정보 — 절대 커밋 금지 (규칙_04 ⑤ · G3)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+node_modules/
+.pnpm-store/
+dist/
+build/
+.next/
+out/
+coverage/
+.DS_Store
+*.log
