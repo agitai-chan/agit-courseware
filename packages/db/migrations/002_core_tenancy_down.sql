@@ -1,6 +1,8 @@
--- 002_core_tenancy_down.sql
--- 출처: 작성_05_AGIT_DB생성SQL_v0_1.md (문서에서 파일로 분리, 내용 무변경)
-
+-- 002_core_tenancy_down.sql  v0.2
+drop trigger if exists on_auth_user_created on auth.users;
+drop trigger if exists on_workspace_created on workspaces;
+drop function if exists public.handle_new_user();
+drop function if exists public.handle_new_workspace();
 drop table if exists memberships cascade;
 drop table if exists users cascade;
 drop table if exists workspaces cascade;
